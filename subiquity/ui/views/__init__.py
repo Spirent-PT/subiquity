@@ -22,6 +22,7 @@ from .installprogress import ProgressView
 from .keyboard import KeyboardView
 from .welcome import WelcomeView
 from .zdev import ZdevView
+from .message import MessageView
 __all__ = [
     'FilesystemView',
     'GuidedDiskSelectionView',
@@ -30,4 +31,5 @@ __all__ = [
     'ProgressView',
     'WelcomeView',
     'ZdevView',
+    'MessageView',
 ]

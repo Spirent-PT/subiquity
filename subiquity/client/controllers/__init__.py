@@ -30,6 +30,7 @@ from .ssh import SSHController
 from .ubuntu_pro import UbuntuProController
 from .welcome import WelcomeController
 from .zdev import ZdevController
+from .message import MessageController
 
 # see SubiquityClient.controllers for another list
 __all__ = [
@@ -50,4 +51,5 @@ __all__ = [
     'UbuntuProController',
     'WelcomeController',
     'ZdevController',
+    'MessageController',
 ]
