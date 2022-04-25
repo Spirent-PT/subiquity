@@ -13,10 +13,9 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import asyncio
+import aiohttp
 import logging
 import os
-from time import sleep
 
 from subiquity.client.controller import SubiquityTuiController
 from subiquity.ui.views.message import MessageView
@@ -51,7 +50,11 @@ class MessageController(SubiquityTuiController):
                 self.ui.body.cancel_btn.base_widget._emit('click')
 
     async def close(self):
-        await self.app.client.shutdown.POST(mode=ShutdownMode.POWEROFF)
+        try:
+            await self.app.client.shutdown.POST(mode=ShutdownMode.REBOOT)
+        except aiohttp.ClientError as e:
+            log.error("MessageController.close {}".format(e))
+        self.app.exit()
 
     def done(self, done):
         log.debug("MessageController.done {}".format(done))
