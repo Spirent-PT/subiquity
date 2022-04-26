@@ -16,6 +16,7 @@
 import aiohttp
 import logging
 import os
+import json
 
 from subiquity.client.controller import SubiquityTuiController
 from subiquity.ui.views.message import MessageView
@@ -29,18 +30,19 @@ from subiquity.common.types import (
 log = logging.getLogger('subiquity.client.controllers.message')
 
 class MessageController(SubiquityTuiController):
-    def read_message_file(self, path = "/cdrom/nocloud/script/message.txt"):
-        msg = "Default message text"
+    def read_message_file(self, path = "/cdrom/nocloud/script/message.json"):
+        msg_obj = json.loads('{"title": "Message Title", "text": "Default message text"}')
         if os.path.isfile(path):
             with open(path, "r") as f:
                 msg = f.read()
+                msg_obj = json.loads(msg)
         else:
             log.debug("MessageController.read_message_file failed to read: {}".format(path))
-        return msg
+        return msg_obj
 
     async def make_ui(self):
         msg = self.read_message_file()
-        return MessageView(self, "Message Title", msg)
+        return MessageView(self, msg['title'], msg['text'])
 
     def run_answers(self):
         if 'agree' in self.answers:
@@ -51,7 +53,7 @@ class MessageController(SubiquityTuiController):
 
     async def close(self):
         try:
-            await self.app.client.shutdown.POST(mode=ShutdownMode.REBOOT)
+            await self.app.client.shutdown.POST(mode=ShutdownMode.POWEROFF, immediate=True)
         except aiohttp.ClientError as e:
             log.error("MessageController.close {}".format(e))
         self.app.exit()
