@@ -13,19 +13,12 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import aiohttp
 import logging
 import os
 import json
 
 from subiquity.client.controller import SubiquityTuiController
 from subiquity.ui.views.message import MessageView
-from subiquitycore.tuicontroller import Skip
-from subiquitycore.utils import run_command
-from subiquity.common.types import (
-    ApplicationState,
-    ShutdownMode,
-    )
 
 log = logging.getLogger('subiquity.client.controllers.message')
 
@@ -52,13 +45,6 @@ class MessageController(SubiquityTuiController):
             else:
                 self.ui.body.cancel_btn.base_widget._emit('click')
 
-    async def close(self):
-        try:
-            await self.app.client.shutdown.POST(mode=ShutdownMode.POWEROFF, immediate=True)
-        except aiohttp.ClientError as e:
-            log.error("MessageController.close {}".format(e))
-        self.app.exit()
-
     def done(self, done):
         log.debug("MessageController.done {}".format(done))
         self.app.next_screen()
@@ -66,5 +52,5 @@ class MessageController(SubiquityTuiController):
     def cancel(self, done):
         # Can't go back from here!
         log.debug("MessageController.cancel {}".format(done))
-        self.app.aio_loop.create_task(self.close())
+        os.system('/usr/sbin/poweroff')
         
