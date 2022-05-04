@@ -28,8 +28,9 @@ class MessageController(SubiquityTuiController):
         if os.path.isfile(path):
             with open(path, "r") as f:
                 msg = f.read()
-                if not msg == '' or not msg is None:
-                    msg_obj = json.loads(msg)
+                if not msg is None:
+                    if not msg == '':
+                        msg_obj = json.loads(msg)
         else:
             log.debug("MessageController.read_message_file failed to read: {}".format(path))
         return msg_obj
