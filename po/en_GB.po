@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: subiquity\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-12 09:48+1200\n"
+"POT-Creation-Date: 2022-05-04 09:32+0100\n"
 "PO-Revision-Date: 2021-06-09 02:14+0000\n"
 "Last-Translator: Michael Hudson-Doyle <mwhudsonlp@fastmail.fm>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2022-04-13 21:32+0000\n"
 "X-Generator: Launchpad (build 560baff2f814495c0c140fb3d6c66875f2312c96)\n"
-"Language: \n"
 
 #: ../subiquity/client/client.py:72
 msgid ""
@@ -41,23 +41,23 @@ msgstr ""
 "environment will not survive a reboot. If the install has started, the\n"
 "installed system will be mounted at /target."
 
-#: ../subiquity/client/client.py:234
+#: ../subiquity/client/client.py:235
 msgid "yes"
 msgstr "yes"
 
-#: ../subiquity/client/client.py:235
+#: ../subiquity/client/client.py:236
 msgid "no"
 msgstr "no"
 
-#: ../subiquity/client/client.py:237
+#: ../subiquity/client/client.py:238
 msgid "Confirmation is required to continue."
 msgstr "Confirmation is required to continue."
 
-#: ../subiquity/client/client.py:238
+#: ../subiquity/client/client.py:239
 msgid "Add 'autoinstall' to your kernel command line to avoid this"
 msgstr "Add 'autoinstall' to your kernel command line to avoid this"
 
-#: ../subiquity/client/client.py:241
+#: ../subiquity/client/client.py:242
 msgid "Continue with autoinstall?"
 msgstr "Continue with autoinstall?"
 
@@ -68,48 +68,6 @@ msgstr "Importing keys failed:"
 #: ../subiquity/client/controllers/ssh.py:100
 msgid "ssh-keygen failed to show fingerprint of downloaded keys:"
 msgstr "ssh-keygen failed to show fingerprint of downloaded keys:"
-
-#. Information about a drive
-#: ../subiquity/common/filesystem/actions.py:47
-msgctxt "DeviceAction"
-msgid "Info"
-msgstr ""
-
-#. Edit a device (partition, logical volume, RAID, etc)
-#: ../subiquity/common/filesystem/actions.py:49
-msgctxt "DeviceAction"
-msgid "Edit"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:50
-msgctxt "DeviceAction"
-msgid "Reformat"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:51
-msgctxt "DeviceAction"
-msgid "Add Partition"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:52
-msgctxt "DeviceAction"
-msgid "Format"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:53
-msgctxt "DeviceAction"
-msgid "Remove from RAID/LVM"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:54
-msgctxt "DeviceAction"
-msgid "Delete"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:55
-msgctxt "DeviceAction"
-msgid "Make Boot Device"
-msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:163
 #, python-brace-format
@@ -179,8 +137,7 @@ msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:313
 #, python-brace-format
-msgid ""
-"Cannot delete {devicelabel} because it has {count} mounted partitions."
+msgid "Cannot delete {devicelabel} because it has {count} mounted partitions."
 msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:319
@@ -383,42 +340,6 @@ msgstr "Unknown error"
 msgid "autoconfiguration failed"
 msgstr "autoconfiguration failed"
 
-#. Information about a network interface
-#: ../subiquitycore/models/network.py:43
-msgctxt "NetDevAction"
-msgid "Info"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:44
-msgctxt "NetDevAction"
-msgid "Edit Wifi"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:45
-msgctxt "NetDevAction"
-msgid "Edit IPv4"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:46
-msgctxt "NetDevAction"
-msgid "Edit IPv6"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:47
-msgctxt "NetDevAction"
-msgid "Edit bond"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:48
-msgctxt "NetDevAction"
-msgid "Add a VLAN tag"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:49
-msgctxt "NetDevAction"
-msgid "Delete"
-msgstr ""
-
 #: ../subiquitycore/ssh.py:59
 msgid "The host key fingerprints are:\n"
 msgstr "The host key fingerprints are:\n"
@@ -464,7 +385,7 @@ msgid "Yes"
 msgstr "Yes"
 
 #: ../subiquitycore/ui/interactive.py:109
-#: ../subiquity/ui/views/installprogress.py:247
+#: ../subiquity/ui/views/installprogress.py:259
 #: ../subiquity/ui/views/keyboard.py:219 ../subiquity/ui/views/ssh.py:98
 #: ../subiquity/ui/views/ssh.py:186
 msgid "No"
@@ -920,14 +841,14 @@ msgstr "Close report"
 
 #: ../subiquity/ui/views/error.py:158
 #: ../subiquity/ui/views/installprogress.py:65
-#: ../subiquity/ui/views/installprogress.py:248
+#: ../subiquity/ui/views/installprogress.py:260
 #: ../subiquity/ui/views/snaplist.py:354 ../subiquity/ui/views/snaplist.py:379
 #: ../subiquity/ui/views/zdev.py:162
 msgid "Continue"
 msgstr "Continue"
 
 #: ../subiquity/ui/views/error.py:160
-#: ../subiquity/ui/views/installprogress.py:282
+#: ../subiquity/ui/views/installprogress.py:294
 #: ../subiquity/ui/views/welcome.py:113
 msgid "Switch to a shell"
 msgstr "Switch to a shell"
@@ -1351,11 +1272,11 @@ msgstr "Help on guided storage configuration"
 
 #: ../subiquity/ui/views/filesystem/lvm.py:61
 msgid ""
-"The only characters permitted in the name of a volume group are a-z, A-Z, 0-"
-"9, +, _, . and -"
+"The only characters permitted in the name of a volume group are a-z, A-Z, "
+"0-9, +, _, . and -"
 msgstr ""
-"The only characters permitted in the name of a volume group are a-z, A-Z, 0-"
-"9, +, _, . and -"
+"The only characters permitted in the name of a volume group are a-z, A-Z, "
+"0-9, +, _, . and -"
 
 #: ../subiquity/ui/views/filesystem/lvm.py:86
 msgid "passphrases"
@@ -2082,8 +2003,8 @@ msgid "Install progress"
 msgstr "Install progress"
 
 #: ../subiquity/ui/views/installprogress.py:59
-#: ../subiquity/ui/views/installprogress.py:174
-#: ../subiquity/ui/views/installprogress.py:181
+#: ../subiquity/ui/views/installprogress.py:183
+#: ../subiquity/ui/views/installprogress.py:190
 msgid "Reboot Now"
 msgstr "Reboot Now"
 
@@ -2100,33 +2021,50 @@ msgid "Full installer output"
 msgstr "Full installer output"
 
 #: ../subiquity/ui/views/installprogress.py:142
-#: ../subiquity/ui/views/installprogress.py:145
-#: ../subiquity/ui/views/installprogress.py:148
-#: ../subiquity/ui/views/installprogress.py:151
 #: ../subiquity/ui/views/installprogress.py:154
+#: ../subiquity/ui/views/installprogress.py:157
+#: ../subiquity/ui/views/installprogress.py:160
+#: ../subiquity/ui/views/installprogress.py:163
 msgid "Installing system"
 msgstr "Installing system"
 
-#: ../subiquity/ui/views/installprogress.py:157
-#: ../subiquity/ui/views/installprogress.py:165
-#: ../subiquity/ui/views/installprogress.py:173
+#: ../subiquity/ui/views/installprogress.py:145
+#, fuzzy
+msgid "Starting installer"
+msgstr "Restart the installer"
+
+#: ../subiquity/ui/views/installprogress.py:148
+msgid "Waiting on cloud-init"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:151
+msgid "Running early-commands"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:166
+#: ../subiquity/ui/views/installprogress.py:174
+#: ../subiquity/ui/views/installprogress.py:182
 msgid "Install complete!"
 msgstr "Install complete!"
 
-#: ../subiquity/ui/views/installprogress.py:159
+#: ../subiquity/ui/views/installprogress.py:168
 msgid "Cancel update and reboot"
 msgstr "Cancel update and reboot"
 
-#: ../subiquity/ui/views/installprogress.py:166
-#: ../subiquity/ui/views/installprogress.py:214
+#: ../subiquity/ui/views/installprogress.py:175
+#: ../subiquity/ui/views/installprogress.py:226
 msgid "Rebooting..."
 msgstr "Rebooting..."
 
-#: ../subiquity/ui/views/installprogress.py:180
+#: ../subiquity/ui/views/installprogress.py:189
 msgid "An error occurred during installation"
 msgstr "An error occurred during installation"
 
-#: ../subiquity/ui/views/installprogress.py:230
+#: ../subiquity/ui/views/installprogress.py:198
+msgid "Subiquity server process has exited"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:242
 msgid ""
 "Selecting Continue below will begin the installation process and\n"
 "result in the loss of data on the disks selected to be formatted.\n"
@@ -2144,11 +2082,11 @@ msgstr ""
 "\n"
 "Are you sure you want to continue?"
 
-#: ../subiquity/ui/views/installprogress.py:251
+#: ../subiquity/ui/views/installprogress.py:263
 msgid "Confirm destructive action"
 msgstr "Confirm destructive action"
 
-#: ../subiquity/ui/views/installprogress.py:271
+#: ../subiquity/ui/views/installprogress.py:283
 #, python-brace-format
 msgid ""
 "The installer running on {tty} is currently installing the system.\n"
@@ -2219,8 +2157,8 @@ msgid ""
 "the standard Latin layout.\n"
 "\n"
 "Right Alt or Caps Lock keys are often chosen for ergonomic reasons (in the "
-"latter case, use the combination Shift+Caps Lock for normal Caps toggle). "
-"Alt+Shift is also a popular combination; it will however lose its usual "
+"latter case, use the combination Shift+Caps Lock for normal Caps toggle). Alt"
+"+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs.\n"
 "\n"
 "Not all listed keys are present on all keyboards. "
@@ -2229,8 +2167,8 @@ msgstr ""
 "the standard Latin layout.\n"
 "\n"
 "Right Alt or Caps Lock keys are often chosen for ergonomic reasons (in the "
-"latter case, use the combination Shift+Caps Lock for normal Caps toggle). "
-"Alt+Shift is also a popular combination; it will however lose its usual "
+"latter case, use the combination Shift+Caps Lock for normal Caps toggle). Alt"
+"+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs.\n"
 "\n"
 "Not all listed keys are present on all keyboards. "
@@ -2370,14 +2308,14 @@ msgid ""
 "If you need to use a HTTP proxy to access the outside world, enter the proxy "
 "information here. Otherwise, leave this blank.\n"
 "\n"
-"The proxy information should be given in the standard form of "
-"\"http://[[user][:pass]@]host[:port]/\"."
+"The proxy information should be given in the standard form of \"http://"
+"[[user][:pass]@]host[:port]/\"."
 msgstr ""
 "If you need to use a HTTP proxy to access the outside world, enter the proxy "
 "information here. Otherwise, leave this blank.\n"
 "\n"
-"The proxy information should be given in the standard form of "
-"\"http://[[user][:pass]@]host[:port]/\"."
+"The proxy information should be given in the standard form of \"http://"
+"[[user][:pass]@]host[:port]/\"."
 
 #: ../subiquity/ui/views/proxy.py:43
 msgid "Proxy address:"
@@ -2584,8 +2522,7 @@ msgid "Enter your GitHub username."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:77
-msgid ""
-"A GitHub username may only contain alphanumeric characters or hyphens."
+msgid "A GitHub username may only contain alphanumeric characters or hyphens."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:81
@@ -2793,11 +2730,9 @@ msgstr "Zdev setup"
 #~ msgid "Network interface {} WIFI configuration"
 #~ msgstr "Network interface {} WIFI configuration"
 
-#, python-format
 #~ msgid "This field must be a %s URL."
 #~ msgstr "This field must be a %s URL."
 
-#, python-format
 #~ msgid "'%s' is not contained in '%s'"
 #~ msgstr "'%s' is not contained in '%s'"
 
@@ -2808,16 +2743,16 @@ msgstr "Zdev setup"
 #~ msgstr "partition of {}"
 
 #~ msgid ""
-#~ "Selecting Continue below will begin the installation process and result in "
-#~ "the loss of data on the disks selected to be formatted.\n"
+#~ "Selecting Continue below will begin the installation process and result "
+#~ "in the loss of data on the disks selected to be formatted.\n"
 #~ "\n"
 #~ "You will not be able to return to this or a previous screen once the "
 #~ "installation has started.\n"
 #~ "\n"
 #~ "Are you sure you want to continue?"
 #~ msgstr ""
-#~ "Selecting Continue below will begin the installation process and result in "
-#~ "the loss of data on the disks selected to be formatted.\n"
+#~ "Selecting Continue below will begin the installation process and result "
+#~ "in the loss of data on the disks selected to be formatted.\n"
 #~ "\n"
 #~ "You will not be able to return to this or a previous screen once the "
 #~ "installation has started.\n"
@@ -2901,7 +2836,6 @@ msgstr "Zdev setup"
 #~ msgid "should be in CIDR form ({})"
 #~ msgstr "should be in CIDR form ({})"
 
-#, python-format
 #~ msgid "%s already exists"
 #~ msgstr "%s already exists"
 
@@ -2914,7 +2848,6 @@ msgstr "Zdev setup"
 #~ msgid "enslaved to {}"
 #~ msgstr "enslaved to {}"
 
-#, python-brace-format
 #~ msgid "DHCPv{v}"
 #~ msgstr "DHCPv{v}"
 
@@ -2942,7 +2875,6 @@ msgstr "Zdev setup"
 #~ msgid "Add Partition"
 #~ msgstr "Add Partition"
 
-#, python-brace-format
 #~ msgid ""
 #~ "Cannot delete {selflabel} as partition {partnum} is part of the {cdtype} "
 #~ "{cdname}."
@@ -2950,14 +2882,13 @@ msgstr "Zdev setup"
 #~ "Cannot delete {selflabel} as partition {partnum} is part of the {cdtype} "
 #~ "{cdname}."
 
-#, python-brace-format
 #~ msgid "Cannot delete {selflabel} because it has {count} mounted partitions."
-#~ msgstr "Cannot delete {selflabel} because it has {count} mounted partitions."
+#~ msgstr ""
+#~ "Cannot delete {selflabel} because it has {count} mounted partitions."
 
 #~ msgid "partition {} of {}"
 #~ msgstr "partition {} of {}"
 
-#, python-brace-format
 #~ msgid "Cannot delete {selflabel} because it has 1 mounted partition."
 #~ msgstr "Cannot delete {selflabel} because it has 1 mounted partition."
 
@@ -2970,11 +2901,9 @@ msgstr "Zdev setup"
 #~ msgid "unused {}"
 #~ msgstr "unused {}"
 
-#, python-brace-format
 #~ msgid "Cannot edit {selflabel} because it has logical volumes."
 #~ msgstr "Cannot edit {selflabel} because it has logical volumes."
 
-#, python-brace-format
 #~ msgid "Cannot edit {selflabel} because it has partitions."
 #~ msgstr "Cannot edit {selflabel} because it has partitions."
 
@@ -2987,7 +2916,6 @@ msgstr "Zdev setup"
 #~ msgid "partition"
 #~ msgstr "partition"
 
-#, python-brace-format
 #~ msgid "It contains {n} {things}:"
 #~ msgstr "It contains {n} {things}:"
 
@@ -3026,21 +2954,21 @@ msgstr "Zdev setup"
 #~ "the rest of the disk, formatted as ext4 and mounted at >>/<<."
 
 #~ msgid ""
-#~ "The LVM guided partitioning scheme creates three partitions on the selected "
-#~ "disk: one as required by the bootloader, one for '/boot', and one covering "
-#~ "the rest of the disk.\n"
+#~ "The LVM guided partitioning scheme creates three partitions on the "
+#~ "selected disk: one as required by the bootloader, one for '/boot', and "
+#~ "one covering the rest of the disk.\n"
 #~ "\n"
-#~ "A LVM volume group is created containing the large partition. A 4 gigabyte "
-#~ "logical volume is created for the root filesystem. It can easily be enlarged "
-#~ "with standard LVM command line tools."
+#~ "A LVM volume group is created containing the large partition. A 4 "
+#~ "gigabyte logical volume is created for the root filesystem. It can easily "
+#~ "be enlarged with standard LVM command line tools."
 #~ msgstr ""
-#~ "The LVM guided partitioning scheme creates three partitions on the selected "
-#~ "disk: one as required by the bootloader, one for >>/boot<<, and one covering "
-#~ "the rest of the disk.\n"
+#~ "The LVM guided partitioning scheme creates three partitions on the "
+#~ "selected disk: one as required by the bootloader, one for >>/boot<<, and "
+#~ "one covering the rest of the disk.\n"
 #~ "\n"
-#~ "A LVM volume group is created containing the large partition. A 4 gigabyte "
-#~ "logical volume is created for the root filesystem. It can easily be enlarged "
-#~ "with standard LVM command line tools."
+#~ "A LVM volume group is created containing the large partition. A 4 "
+#~ "gigabyte logical volume is created for the root filesystem. It can easily "
+#~ "be enlarged with standard LVM command line tools."
 
 #~ msgid "Passphrases"
 #~ msgstr "Passphrases"
@@ -3075,13 +3003,13 @@ msgstr "Zdev setup"
 #~ msgid ""
 #~ "Required bootloader partition\n"
 #~ "\n"
-#~ "This is the PReP partion which is required on POWER. Grub will be installed "
-#~ "onto this partition."
+#~ "This is the PReP partion which is required on POWER. Grub will be "
+#~ "installed onto this partition."
 #~ msgstr ""
 #~ "Required bootloader partition\n"
 #~ "\n"
-#~ "This is the PReP partion which is required on POWER. Grub will be installed "
-#~ "onto this partition."
+#~ "This is the PReP partion which is required on POWER. Grub will be "
+#~ "installed onto this partition."
 
 #~ msgid "Editing {} of {}"
 #~ msgstr "Editing {} of {}"
@@ -3119,7 +3047,6 @@ msgstr "Zdev setup"
 #~ msgid ", mounted at {}"
 #~ msgstr ", mounted at {}"
 
-#, python-brace-format
 #~ msgid "Cannot remove selflabel from pre-exsting {cdtype} {cdlabel}"
 #~ msgstr "Cannot remove selflabel from pre-exsting {cdtype} {cdlabel}"
 
@@ -3151,16 +3078,15 @@ msgstr "Zdev setup"
 #~ "installed onto this partition, which must be formatted as fat32."
 
 #~ msgid ""
-#~ " You can choose whether to use the existing filesystem on this partition or "
-#~ "reformat it."
+#~ " You can choose whether to use the existing filesystem on this partition "
+#~ "or reformat it."
 #~ msgstr ""
-#~ " You can choose whether to use the existing filesystem on this partition or "
-#~ "reformat it."
+#~ " You can choose whether to use the existing filesystem on this partition "
+#~ "or reformat it."
 
 #~ msgid " The only aspect of this partition that can be edited is the size."
 #~ msgstr " The only aspect of this partition that can be edited is the size."
 
-#, python-brace-format
 #~ msgid "software RAID {level}"
 #~ msgstr "software RAID {level}"
 

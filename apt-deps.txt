@@ -37,5 +37,6 @@ python3-systemd
 python3-urwid
 python3-wheel
 python3-yaml
+dh-python
 ssh-import-id
 xorriso

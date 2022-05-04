@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: subiquity\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-12 09:48+1200\n"
+"POT-Creation-Date: 2022-05-04 09:32+0100\n"
 "PO-Revision-Date: 2019-12-28 00:00+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2022-04-13 21:32+0000\n"
 "X-Generator: Launchpad (build 560baff2f814495c0c140fb3d6c66875f2312c96)\n"
-"Language: es\n"
 
 #: ../subiquity/client/client.py:72
 msgid ""
@@ -32,23 +32,23 @@ msgid ""
 "installed system will be mounted at /target."
 msgstr ""
 
-#: ../subiquity/client/client.py:234
+#: ../subiquity/client/client.py:235
 msgid "yes"
 msgstr ""
 
-#: ../subiquity/client/client.py:235
+#: ../subiquity/client/client.py:236
 msgid "no"
 msgstr ""
 
-#: ../subiquity/client/client.py:237
+#: ../subiquity/client/client.py:238
 msgid "Confirmation is required to continue."
 msgstr ""
 
-#: ../subiquity/client/client.py:238
+#: ../subiquity/client/client.py:239
 msgid "Add 'autoinstall' to your kernel command line to avoid this"
 msgstr ""
 
-#: ../subiquity/client/client.py:241
+#: ../subiquity/client/client.py:242
 msgid "Continue with autoinstall?"
 msgstr ""
 
@@ -58,48 +58,6 @@ msgstr ""
 
 #: ../subiquity/client/controllers/ssh.py:100
 msgid "ssh-keygen failed to show fingerprint of downloaded keys:"
-msgstr ""
-
-#. Information about a drive
-#: ../subiquity/common/filesystem/actions.py:47
-msgctxt "DeviceAction"
-msgid "Info"
-msgstr ""
-
-#. Edit a device (partition, logical volume, RAID, etc)
-#: ../subiquity/common/filesystem/actions.py:49
-msgctxt "DeviceAction"
-msgid "Edit"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:50
-msgctxt "DeviceAction"
-msgid "Reformat"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:51
-msgctxt "DeviceAction"
-msgid "Add Partition"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:52
-msgctxt "DeviceAction"
-msgid "Format"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:53
-msgctxt "DeviceAction"
-msgid "Remove from RAID/LVM"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:54
-msgctxt "DeviceAction"
-msgid "Delete"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:55
-msgctxt "DeviceAction"
-msgid "Make Boot Device"
 msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:163
@@ -166,8 +124,7 @@ msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:313
 #, python-brace-format
-msgid ""
-"Cannot delete {devicelabel} because it has {count} mounted partitions."
+msgid "Cannot delete {devicelabel} because it has {count} mounted partitions."
 msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:319
@@ -368,42 +325,6 @@ msgstr "Error desconocido"
 msgid "autoconfiguration failed"
 msgstr "falló la configuración automática"
 
-#. Information about a network interface
-#: ../subiquitycore/models/network.py:43
-msgctxt "NetDevAction"
-msgid "Info"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:44
-msgctxt "NetDevAction"
-msgid "Edit Wifi"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:45
-msgctxt "NetDevAction"
-msgid "Edit IPv4"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:46
-msgctxt "NetDevAction"
-msgid "Edit IPv6"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:47
-msgctxt "NetDevAction"
-msgid "Edit bond"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:48
-msgctxt "NetDevAction"
-msgid "Add a VLAN tag"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:49
-msgctxt "NetDevAction"
-msgid "Delete"
-msgstr ""
-
 #: ../subiquitycore/ssh.py:59
 msgid "The host key fingerprints are:\n"
 msgstr ""
@@ -449,7 +370,7 @@ msgid "Yes"
 msgstr "Sí"
 
 #: ../subiquitycore/ui/interactive.py:109
-#: ../subiquity/ui/views/installprogress.py:247
+#: ../subiquity/ui/views/installprogress.py:259
 #: ../subiquity/ui/views/keyboard.py:219 ../subiquity/ui/views/ssh.py:98
 #: ../subiquity/ui/views/ssh.py:186
 msgid "No"
@@ -871,14 +792,14 @@ msgstr ""
 
 #: ../subiquity/ui/views/error.py:158
 #: ../subiquity/ui/views/installprogress.py:65
-#: ../subiquity/ui/views/installprogress.py:248
+#: ../subiquity/ui/views/installprogress.py:260
 #: ../subiquity/ui/views/snaplist.py:354 ../subiquity/ui/views/snaplist.py:379
 #: ../subiquity/ui/views/zdev.py:162
 msgid "Continue"
 msgstr "Continuar"
 
 #: ../subiquity/ui/views/error.py:160
-#: ../subiquity/ui/views/installprogress.py:282
+#: ../subiquity/ui/views/installprogress.py:294
 #: ../subiquity/ui/views/welcome.py:113
 msgid "Switch to a shell"
 msgstr ""
@@ -1258,8 +1179,8 @@ msgstr ""
 
 #: ../subiquity/ui/views/filesystem/lvm.py:61
 msgid ""
-"The only characters permitted in the name of a volume group are a-z, A-Z, 0-"
-"9, +, _, . and -"
+"The only characters permitted in the name of a volume group are a-z, A-Z, "
+"0-9, +, _, . and -"
 msgstr ""
 
 #: ../subiquity/ui/views/filesystem/lvm.py:86
@@ -1908,8 +1829,8 @@ msgid "Install progress"
 msgstr ""
 
 #: ../subiquity/ui/views/installprogress.py:59
-#: ../subiquity/ui/views/installprogress.py:174
-#: ../subiquity/ui/views/installprogress.py:181
+#: ../subiquity/ui/views/installprogress.py:183
+#: ../subiquity/ui/views/installprogress.py:190
 msgid "Reboot Now"
 msgstr "Reiniciar ahora"
 
@@ -1926,33 +1847,49 @@ msgid "Full installer output"
 msgstr "Salida completa del instalador"
 
 #: ../subiquity/ui/views/installprogress.py:142
-#: ../subiquity/ui/views/installprogress.py:145
-#: ../subiquity/ui/views/installprogress.py:148
-#: ../subiquity/ui/views/installprogress.py:151
 #: ../subiquity/ui/views/installprogress.py:154
+#: ../subiquity/ui/views/installprogress.py:157
+#: ../subiquity/ui/views/installprogress.py:160
+#: ../subiquity/ui/views/installprogress.py:163
 msgid "Installing system"
 msgstr "Instalando el sistema"
 
-#: ../subiquity/ui/views/installprogress.py:157
-#: ../subiquity/ui/views/installprogress.py:165
-#: ../subiquity/ui/views/installprogress.py:173
+#: ../subiquity/ui/views/installprogress.py:145
+msgid "Starting installer"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:148
+msgid "Waiting on cloud-init"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:151
+msgid "Running early-commands"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:166
+#: ../subiquity/ui/views/installprogress.py:174
+#: ../subiquity/ui/views/installprogress.py:182
 msgid "Install complete!"
 msgstr "Ha finalizado la instalación."
 
-#: ../subiquity/ui/views/installprogress.py:159
+#: ../subiquity/ui/views/installprogress.py:168
 msgid "Cancel update and reboot"
 msgstr "Cancelar actualización y reiniciar"
 
-#: ../subiquity/ui/views/installprogress.py:166
-#: ../subiquity/ui/views/installprogress.py:214
+#: ../subiquity/ui/views/installprogress.py:175
+#: ../subiquity/ui/views/installprogress.py:226
 msgid "Rebooting..."
 msgstr ""
 
-#: ../subiquity/ui/views/installprogress.py:180
+#: ../subiquity/ui/views/installprogress.py:189
 msgid "An error occurred during installation"
 msgstr "Se produjo un error durante la instalación"
 
-#: ../subiquity/ui/views/installprogress.py:230
+#: ../subiquity/ui/views/installprogress.py:198
+msgid "Subiquity server process has exited"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:242
 msgid ""
 "Selecting Continue below will begin the installation process and\n"
 "result in the loss of data on the disks selected to be formatted.\n"
@@ -1963,11 +1900,11 @@ msgid ""
 "Are you sure you want to continue?"
 msgstr ""
 
-#: ../subiquity/ui/views/installprogress.py:251
+#: ../subiquity/ui/views/installprogress.py:263
 msgid "Confirm destructive action"
 msgstr "Confirmar acción destructiva"
 
-#: ../subiquity/ui/views/installprogress.py:271
+#: ../subiquity/ui/views/installprogress.py:283
 #, python-brace-format
 msgid ""
 "The installer running on {tty} is currently installing the system.\n"
@@ -2026,8 +1963,8 @@ msgid ""
 "the standard Latin layout.\n"
 "\n"
 "Right Alt or Caps Lock keys are often chosen for ergonomic reasons (in the "
-"latter case, use the combination Shift+Caps Lock for normal Caps toggle). "
-"Alt+Shift is also a popular combination; it will however lose its usual "
+"latter case, use the combination Shift+Caps Lock for normal Caps toggle). Alt"
+"+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs.\n"
 "\n"
 "Not all listed keys are present on all keyboards. "
@@ -2167,8 +2104,8 @@ msgid ""
 "If you need to use a HTTP proxy to access the outside world, enter the proxy "
 "information here. Otherwise, leave this blank.\n"
 "\n"
-"The proxy information should be given in the standard form of "
-"\"http://[[user][:pass]@]host[:port]/\"."
+"The proxy information should be given in the standard form of \"http://"
+"[[user][:pass]@]host[:port]/\"."
 msgstr ""
 
 #: ../subiquity/ui/views/proxy.py:43
@@ -2365,8 +2302,7 @@ msgid "Enter your GitHub username."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:77
-msgid ""
-"A GitHub username may only contain alphanumeric characters or hyphens."
+msgid "A GitHub username may only contain alphanumeric characters or hyphens."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:81
@@ -2435,8 +2371,7 @@ msgstr "Confirmar claves SSH"
 #: ../subiquity/ui/views/ssh.py:190
 msgid ""
 "Keys with the following fingerprints were fetched. Do you want to use them?"
-msgstr ""
-"Se recuperaron claves con las huellas siguientes. ¿Quiere utilizarlas?"
+msgstr "Se recuperaron claves con las huellas siguientes. ¿Quiere utilizarlas?"
 
 #: ../subiquity/ui/views/ssh.py:193
 msgid "Confirm SSH key"
@@ -2570,11 +2505,9 @@ msgstr ""
 #~ msgid "from Github"
 #~ msgstr "de GitHub"
 
-#, python-format
 #~ msgid "'%s' is not contained in '%s'"
 #~ msgstr "«%s» no está contenido en «%s»"
 
-#, python-format
 #~ msgid "This field must be a %s URL."
 #~ msgstr "Este campo debe ser un URL %s."
 
@@ -2599,7 +2532,6 @@ msgstr ""
 #~ msgid "Edit IPv4"
 #~ msgstr "Editar IPv4"
 
-#, python-format
 #~ msgid "%s already exists"
 #~ msgstr "%s ya existe"
 
@@ -2609,7 +2541,6 @@ msgstr ""
 #~ msgid "There is already a network device named \"{}\""
 #~ msgstr "Ya hay un dispositivo de red llamado «{}»"
 
-#, python-brace-format
 #~ msgid "DHCPv{v}"
 #~ msgstr "DHCPv{v}"
 

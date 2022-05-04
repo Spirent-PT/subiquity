@@ -6,11 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: subiquity\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-04-12 09:48+1200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-04 09:32+0100\n"
 "PO-Revision-Date: 2021-02-18 02:14+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,23 +32,23 @@ msgid ""
 "installed system will be mounted at /target."
 msgstr ""
 
-#: ../subiquity/client/client.py:234
+#: ../subiquity/client/client.py:235
 msgid "yes"
 msgstr "是"
 
-#: ../subiquity/client/client.py:235
+#: ../subiquity/client/client.py:236
 msgid "no"
 msgstr "否"
 
-#: ../subiquity/client/client.py:237
+#: ../subiquity/client/client.py:238
 msgid "Confirmation is required to continue."
 msgstr "必須確認以繼續。"
 
-#: ../subiquity/client/client.py:238
+#: ../subiquity/client/client.py:239
 msgid "Add 'autoinstall' to your kernel command line to avoid this"
 msgstr "為內核指令列加入 autoinstall 以避免此情況"
 
-#: ../subiquity/client/client.py:241
+#: ../subiquity/client/client.py:242
 msgid "Continue with autoinstall?"
 msgstr "是否以 autoinstall 繼續？"
 
@@ -58,48 +59,6 @@ msgstr "金鑰匯入失敗："
 #: ../subiquity/client/controllers/ssh.py:100
 msgid "ssh-keygen failed to show fingerprint of downloaded keys:"
 msgstr "ssh-keygen 無法顯示下載的金鑰指紋："
-
-#. Information about a drive
-#: ../subiquity/common/filesystem/actions.py:47
-msgctxt "DeviceAction"
-msgid "Info"
-msgstr ""
-
-#. Edit a device (partition, logical volume, RAID, etc)
-#: ../subiquity/common/filesystem/actions.py:49
-msgctxt "DeviceAction"
-msgid "Edit"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:50
-msgctxt "DeviceAction"
-msgid "Reformat"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:51
-msgctxt "DeviceAction"
-msgid "Add Partition"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:52
-msgctxt "DeviceAction"
-msgid "Format"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:53
-msgctxt "DeviceAction"
-msgid "Remove from RAID/LVM"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:54
-msgctxt "DeviceAction"
-msgid "Delete"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:55
-msgctxt "DeviceAction"
-msgid "Make Boot Device"
-msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:163
 #, python-brace-format
@@ -165,8 +124,7 @@ msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:313
 #, python-brace-format
-msgid ""
-"Cannot delete {devicelabel} because it has {count} mounted partitions."
+msgid "Cannot delete {devicelabel} because it has {count} mounted partitions."
 msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:319
@@ -367,42 +325,6 @@ msgstr "未知的錯誤"
 msgid "autoconfiguration failed"
 msgstr "自動設定失敗"
 
-#. Information about a network interface
-#: ../subiquitycore/models/network.py:43
-msgctxt "NetDevAction"
-msgid "Info"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:44
-msgctxt "NetDevAction"
-msgid "Edit Wifi"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:45
-msgctxt "NetDevAction"
-msgid "Edit IPv4"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:46
-msgctxt "NetDevAction"
-msgid "Edit IPv6"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:47
-msgctxt "NetDevAction"
-msgid "Edit bond"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:48
-msgctxt "NetDevAction"
-msgid "Add a VLAN tag"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:49
-msgctxt "NetDevAction"
-msgid "Delete"
-msgstr ""
-
 #: ../subiquitycore/ssh.py:59
 msgid "The host key fingerprints are:\n"
 msgstr "主機金鑰指紋為：\n"
@@ -448,7 +370,7 @@ msgid "Yes"
 msgstr "是"
 
 #: ../subiquitycore/ui/interactive.py:109
-#: ../subiquity/ui/views/installprogress.py:247
+#: ../subiquity/ui/views/installprogress.py:259
 #: ../subiquity/ui/views/keyboard.py:219 ../subiquity/ui/views/ssh.py:98
 #: ../subiquity/ui/views/ssh.py:186
 msgid "No"
@@ -897,14 +819,14 @@ msgstr "關閉報告"
 
 #: ../subiquity/ui/views/error.py:158
 #: ../subiquity/ui/views/installprogress.py:65
-#: ../subiquity/ui/views/installprogress.py:248
+#: ../subiquity/ui/views/installprogress.py:260
 #: ../subiquity/ui/views/snaplist.py:354 ../subiquity/ui/views/snaplist.py:379
 #: ../subiquity/ui/views/zdev.py:162
 msgid "Continue"
 msgstr "繼續"
 
 #: ../subiquity/ui/views/error.py:160
-#: ../subiquity/ui/views/installprogress.py:282
+#: ../subiquity/ui/views/installprogress.py:294
 #: ../subiquity/ui/views/welcome.py:113
 msgid "Switch to a shell"
 msgstr "切換至 shell"
@@ -1295,8 +1217,8 @@ msgstr "關於引導式儲存空間設定的說明"
 
 #: ../subiquity/ui/views/filesystem/lvm.py:61
 msgid ""
-"The only characters permitted in the name of a volume group are a-z, A-Z, 0-"
-"9, +, _, . and -"
+"The only characters permitted in the name of a volume group are a-z, A-Z, "
+"0-9, +, _, . and -"
 msgstr "邏輯卷宗群組名稱可用的字元為 a-z、A-Z、0-9、+、_、. 和 -"
 
 #: ../subiquity/ui/views/filesystem/lvm.py:86
@@ -1595,8 +1517,8 @@ msgid ""
 "on Launchpad, and if possible include the contents of the /var/log/installer "
 "directory."
 msgstr ""
-"很不幸的探測要安裝至哪個系統區塊裝置的工作失敗。請至 Launchpad 回報錯誤，若可能的話請附上 /var/log/installer "
-"資料夾內的內容。"
+"很不幸的探測要安裝至哪個系統區塊裝置的工作失敗。請至 Launchpad 回報錯誤，若可"
+"能的話請附上 /var/log/installer 資料夾內的內容。"
 
 #: ../subiquity/ui/views/filesystem/probing.py:68
 msgid "Probing for devices to install to failed"
@@ -1987,7 +1909,9 @@ msgid ""
 "Enter the username and password you will use to log in to the system. You "
 "can configure SSH access on the next screen but a password is still needed "
 "for sudo."
-msgstr "輸入您用來登入系統的帳號及密碼。您可以在下個畫面設定 SSH 存取，但 sudo 的密碼是必要的。"
+msgstr ""
+"輸入您用來登入系統的帳號及密碼。您可以在下個畫面設定 SSH 存取，但 sudo 的密碼"
+"是必要的。"
 
 #: ../subiquity/ui/views/identity.py:188
 msgid "passwords"
@@ -1998,8 +1922,8 @@ msgid "Install progress"
 msgstr "安裝進度"
 
 #: ../subiquity/ui/views/installprogress.py:59
-#: ../subiquity/ui/views/installprogress.py:174
-#: ../subiquity/ui/views/installprogress.py:181
+#: ../subiquity/ui/views/installprogress.py:183
+#: ../subiquity/ui/views/installprogress.py:190
 msgid "Reboot Now"
 msgstr "馬上重新開機"
 
@@ -2016,33 +1940,50 @@ msgid "Full installer output"
 msgstr "完整的安裝程式輸出"
 
 #: ../subiquity/ui/views/installprogress.py:142
-#: ../subiquity/ui/views/installprogress.py:145
-#: ../subiquity/ui/views/installprogress.py:148
-#: ../subiquity/ui/views/installprogress.py:151
 #: ../subiquity/ui/views/installprogress.py:154
+#: ../subiquity/ui/views/installprogress.py:157
+#: ../subiquity/ui/views/installprogress.py:160
+#: ../subiquity/ui/views/installprogress.py:163
 msgid "Installing system"
 msgstr "正在安裝系統"
 
-#: ../subiquity/ui/views/installprogress.py:157
-#: ../subiquity/ui/views/installprogress.py:165
-#: ../subiquity/ui/views/installprogress.py:173
+#: ../subiquity/ui/views/installprogress.py:145
+#, fuzzy
+msgid "Starting installer"
+msgstr "重新啟動安裝程式"
+
+#: ../subiquity/ui/views/installprogress.py:148
+msgid "Waiting on cloud-init"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:151
+msgid "Running early-commands"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:166
+#: ../subiquity/ui/views/installprogress.py:174
+#: ../subiquity/ui/views/installprogress.py:182
 msgid "Install complete!"
 msgstr "安裝完成！"
 
-#: ../subiquity/ui/views/installprogress.py:159
+#: ../subiquity/ui/views/installprogress.py:168
 msgid "Cancel update and reboot"
 msgstr "取消更新並重新開機"
 
-#: ../subiquity/ui/views/installprogress.py:166
-#: ../subiquity/ui/views/installprogress.py:214
+#: ../subiquity/ui/views/installprogress.py:175
+#: ../subiquity/ui/views/installprogress.py:226
 msgid "Rebooting..."
 msgstr "正在重新開機..."
 
-#: ../subiquity/ui/views/installprogress.py:180
+#: ../subiquity/ui/views/installprogress.py:189
 msgid "An error occurred during installation"
 msgstr "安裝過程中發生錯誤"
 
-#: ../subiquity/ui/views/installprogress.py:230
+#: ../subiquity/ui/views/installprogress.py:198
+msgid "Subiquity server process has exited"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:242
 msgid ""
 "Selecting Continue below will begin the installation process and\n"
 "result in the loss of data on the disks selected to be formatted.\n"
@@ -2059,11 +2000,11 @@ msgstr ""
 "\n"
 "您是否想要繼續？"
 
-#: ../subiquity/ui/views/installprogress.py:251
+#: ../subiquity/ui/views/installprogress.py:263
 msgid "Confirm destructive action"
 msgstr "確認執行不可逆的破壞性操作"
 
-#: ../subiquity/ui/views/installprogress.py:271
+#: ../subiquity/ui/views/installprogress.py:283
 #, python-brace-format
 msgid ""
 "The installer running on {tty} is currently installing the system.\n"
@@ -2082,7 +2023,9 @@ msgstr "鍵盤配置自動偵測"
 msgid ""
 "Keyboard detection starting. You will be asked a series of questions about "
 "your keyboard. Press escape at any time to go back to the previous screen."
-msgstr "開始偵測鍵盤配置，您將會被問幾個與您鍵盤有關的問題。您可以隨時按下 Esc 鍵回到上一個畫面。"
+msgstr ""
+"開始偵測鍵盤配置，您將會被問幾個與您鍵盤有關的問題。您可以隨時按下 Esc 鍵回到"
+"上一個畫面。"
 
 #: ../subiquity/ui/views/keyboard.py:106
 msgid ""
@@ -2102,7 +2045,8 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"若正確，請在下個畫面選擇「完成」。若不正確您可以選擇其他配置或重新執行自動偵測。\n"
+"若正確，請在下個畫面選擇「完成」。若不正確您可以選擇其他配置或重新執行自動偵"
+"測。\n"
 "\n"
 
 #: ../subiquity/ui/views/keyboard.py:128
@@ -2131,16 +2075,17 @@ msgid ""
 "the standard Latin layout.\n"
 "\n"
 "Right Alt or Caps Lock keys are often chosen for ergonomic reasons (in the "
-"latter case, use the combination Shift+Caps Lock for normal Caps toggle). "
-"Alt+Shift is also a popular combination; it will however lose its usual "
+"latter case, use the combination Shift+Caps Lock for normal Caps toggle). Alt"
+"+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs.\n"
 "\n"
 "Not all listed keys are present on all keyboards. "
 msgstr ""
 "您將會需要一個能夠在鍵盤的國際配置以及標準拉丁配置間切換的方法。\n"
 "\n"
-"右 Alt 或 Caps Lock 鍵通常是個較符合人體工學的選擇（或採用後者，請用 Shift+Caps Lock "
-"鍵的組合來切換大小寫）。Alt+Shift 也是個很受歡迎的組合；不過這將會使這組合鍵在 Emacs 與其他程式中無法使用原本該有的特定功能。\n"
+"右 Alt 或 Caps Lock 鍵通常是個較符合人體工學的選擇（或採用後者，請用 Shift"
+"+Caps Lock 鍵的組合來切換大小寫）。Alt+Shift 也是個很受歡迎的組合；不過這將會"
+"使這組合鍵在 Emacs 與其他程式中無法使用原本該有的特定功能。\n"
 "\n"
 "不是在所有鍵盤上都可找到所有列出來的按鍵。 "
 
@@ -2274,10 +2219,11 @@ msgid ""
 "If you need to use a HTTP proxy to access the outside world, enter the proxy "
 "information here. Otherwise, leave this blank.\n"
 "\n"
-"The proxy information should be given in the standard form of "
-"\"http://[[user][:pass]@]host[:port]/\"."
+"The proxy information should be given in the standard form of \"http://"
+"[[user][:pass]@]host[:port]/\"."
 msgstr ""
-"若您需要使用 HTTP 代理伺服器來存取網際網路，請在此輸入代理伺服器資訊。否則請將此處留白。\n"
+"若您需要使用 HTTP 代理伺服器來存取網際網路，請在此輸入代理伺服器資訊。否則請"
+"將此處留白。\n"
 "\n"
 "代理伺服器資訊應該符合後列標準格式「http://[[user][:pass]@]host[:port]/」。"
 
@@ -2459,7 +2405,8 @@ msgid ""
 "SPACE, press ENTER to see more details of the package, publisher and "
 "versions available."
 msgstr ""
-"這些是在伺服器環境下受歡迎的 snaps。用空白鍵來選擇或取消選擇，按下 ENTER 鍵來查閱關於此套件的更多詳細訊、發布者以及可用的版本。"
+"這些是在伺服器環境下受歡迎的 snaps。用空白鍵來選擇或取消選擇，按下 ENTER 鍵來"
+"查閱關於此套件的更多詳細訊、發布者以及可用的版本。"
 
 #: ../subiquity/ui/views/ssh.py:67
 msgid "Import Username:"
@@ -2474,8 +2421,7 @@ msgid "Enter your GitHub username."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:77
-msgid ""
-"A GitHub username may only contain alphanumeric characters or hyphens."
+msgid "A GitHub username may only contain alphanumeric characters or hyphens."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:81
@@ -2525,7 +2471,9 @@ msgid ""
 "A Launchpad username must start with a letter or number. All letters must be "
 "lower-case. The characters +, - and . are also allowed after the first "
 "character."
-msgstr "Launchpad 使用者名稱必須由字母或數字開頭。所有字母必須是小寫。特殊符號 +、- 以及 . 可以在第一個字元後使用。"
+msgstr ""
+"Launchpad 使用者名稱必須由字母或數字開頭。所有字母必須是小寫。特殊符號 +、- "
+"以及 . 可以在第一個字元後使用。"
 
 #: ../subiquity/ui/views/ssh.py:151
 msgid ""
@@ -2676,7 +2624,6 @@ msgstr "Zdev 設置"
 #~ msgid "Make Boot Device"
 #~ msgstr "製作開機磁碟"
 
-#, python-brace-format
 #~ msgid "software RAID {level}"
 #~ msgstr "軟體 RAID {level}"
 
@@ -2698,33 +2645,27 @@ msgstr "Zdev 設置"
 #~ msgid "Passphrases"
 #~ msgstr "通關密語"
 
-#, python-brace-format
 #~ msgid "Cannot delete {selflabel} because it has {count} mounted partitions."
 #~ msgstr "{selflabel} 已有 {count} 個已掛載的分割區，因此無法將其刪除。"
 
-#, python-brace-format
 #~ msgid "Cannot delete {selflabel} because it has 1 mounted partition."
 #~ msgstr "{selflabel} 已有 1 個已掛載的分割區，因此無法將其刪除。"
 
-#, python-format
 #~ msgid "%s already exists"
 #~ msgstr "%s 已經存在"
 
-#, python-format
 #~ msgid "This field must be a %s URL."
 #~ msgstr "此欄位必須是 %s URL。"
 
-#, python-format
 #~ msgid "'%s' is not contained in '%s'"
 #~ msgstr "「%s」不包含在「%s」之中"
 
-#, python-brace-format
 #~ msgid ""
 #~ "Cannot delete {selflabel} as partition {partnum} is part of the {cdtype} "
 #~ "{cdname}."
-#~ msgstr "無法刪除 {selflabel} 因為分割區 {partnum} 為 {cdtype} {cdname} 的一部分。"
+#~ msgstr ""
+#~ "無法刪除 {selflabel} 因為分割區 {partnum} 為 {cdtype} {cdname} 的一部分。"
 
-#, python-brace-format
 #~ msgid "Cannot edit {selflabel} because it has partitions."
 #~ msgstr "無法編輯 {selflabel} 因其已有分割區。"
 
@@ -2752,7 +2693,6 @@ msgstr "Zdev 設置"
 #~ msgid "A logical volume may not be called {}"
 #~ msgstr "邏輯卷宗不可取名為 {}"
 
-#, python-brace-format
 #~ msgid "Cannot edit {selflabel} because it has logical volumes."
 #~ msgstr "無法編輯 {selflabel} 因其有邏輯卷宗。"
 
@@ -2775,7 +2715,8 @@ msgstr "Zdev 設置"
 #~ msgid ""
 #~ "A Github username may only contain alphanumeric characters or single "
 #~ "hyphens, and cannot begin or end with a hyphen."
-#~ msgstr "Github 使用者名稱只能由字母、數字、或連字號組成，而且頭尾不能是連字號。"
+#~ msgstr ""
+#~ "Github 使用者名稱只能由字母、數字、或連字號組成，而且頭尾不能是連字號。"
 
 #~ msgid "Fetching info for {}"
 #~ msgstr "取得 {} 的資訊中"

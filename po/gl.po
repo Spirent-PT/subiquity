@@ -6,11 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: subiquity\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2022-04-12 09:48+1200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-04 09:32+0100\n"
 "PO-Revision-Date: 2021-03-19 09:20+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Galician <gl@li.org>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,23 +41,23 @@ msgstr ""
 "se fagan neste ambiente non sobreviven o reinicio. Se a instalación xa\n"
 "se iniciou, o sistema instalado móntase en /target."
 
-#: ../subiquity/client/client.py:234
+#: ../subiquity/client/client.py:235
 msgid "yes"
 msgstr "si"
 
-#: ../subiquity/client/client.py:235
+#: ../subiquity/client/client.py:236
 msgid "no"
 msgstr "non"
 
-#: ../subiquity/client/client.py:237
+#: ../subiquity/client/client.py:238
 msgid "Confirmation is required to continue."
 msgstr "Requírese confirmación para continuar."
 
-#: ../subiquity/client/client.py:238
+#: ../subiquity/client/client.py:239
 msgid "Add 'autoinstall' to your kernel command line to avoid this"
 msgstr "Engada «autoinstall» á liña de ordes do seu kernel para evitar isto"
 
-#: ../subiquity/client/client.py:241
+#: ../subiquity/client/client.py:242
 msgid "Continue with autoinstall?"
 msgstr "Desexa continuar coa instalación automática?"
 
@@ -66,56 +67,12 @@ msgstr "Produciuse un erro ao importar as chaves:"
 
 #: ../subiquity/client/controllers/ssh.py:100
 msgid "ssh-keygen failed to show fingerprint of downloaded keys:"
-msgstr ""
-"ssh-keygen non deu mostrado a pegada dixital ou descargado as chaves:"
-
-#. Information about a drive
-#: ../subiquity/common/filesystem/actions.py:47
-msgctxt "DeviceAction"
-msgid "Info"
-msgstr ""
-
-#. Edit a device (partition, logical volume, RAID, etc)
-#: ../subiquity/common/filesystem/actions.py:49
-msgctxt "DeviceAction"
-msgid "Edit"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:50
-msgctxt "DeviceAction"
-msgid "Reformat"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:51
-msgctxt "DeviceAction"
-msgid "Add Partition"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:52
-msgctxt "DeviceAction"
-msgid "Format"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:53
-msgctxt "DeviceAction"
-msgid "Remove from RAID/LVM"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:54
-msgctxt "DeviceAction"
-msgid "Delete"
-msgstr ""
-
-#: ../subiquity/common/filesystem/actions.py:55
-msgctxt "DeviceAction"
-msgid "Make Boot Device"
-msgstr ""
+msgstr "ssh-keygen non deu mostrado a pegada dixital ou descargado as chaves:"
 
 #: ../subiquity/common/filesystem/actions.py:163
 #, python-brace-format
 msgid "Cannot edit {selflabel} as it is part of the {cdtype} {cdname}."
-msgstr ""
-"Non é posíbel editar {selflabel} porque é parte de {cdtype} {cdname}."
+msgstr "Non é posíbel editar {selflabel} porque é parte de {cdtype} {cdname}."
 
 #: ../subiquity/common/filesystem/actions.py:177
 msgid "Cannot edit pre-existing RAIDs."
@@ -138,8 +95,7 @@ msgstr ""
 #: ../subiquity/common/filesystem/actions.py:241
 #, python-brace-format
 msgid "Cannot remove {selflabel} from pre-existing {cdtype} {cdlabel}."
-msgstr ""
-"Non é posíbel retirar {selflabel} do {cdtype} {cdlabel} xa existente."
+msgstr "Non é posíbel retirar {selflabel} do {cdtype} {cdlabel} xa existente."
 
 #: ../subiquity/common/filesystem/actions.py:252
 #, python-brace-format
@@ -182,8 +138,7 @@ msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:313
 #, python-brace-format
-msgid ""
-"Cannot delete {devicelabel} because it has {count} mounted partitions."
+msgid "Cannot delete {devicelabel} because it has {count} mounted partitions."
 msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:319
@@ -386,42 +341,6 @@ msgstr "Erro descoñecido"
 msgid "autoconfiguration failed"
 msgstr "fallou a configuración automática"
 
-#. Information about a network interface
-#: ../subiquitycore/models/network.py:43
-msgctxt "NetDevAction"
-msgid "Info"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:44
-msgctxt "NetDevAction"
-msgid "Edit Wifi"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:45
-msgctxt "NetDevAction"
-msgid "Edit IPv4"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:46
-msgctxt "NetDevAction"
-msgid "Edit IPv6"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:47
-msgctxt "NetDevAction"
-msgid "Edit bond"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:48
-msgctxt "NetDevAction"
-msgid "Add a VLAN tag"
-msgstr ""
-
-#: ../subiquitycore/models/network.py:49
-msgctxt "NetDevAction"
-msgid "Delete"
-msgstr ""
-
 #: ../subiquitycore/ssh.py:59
 msgid "The host key fingerprints are:\n"
 msgstr "As pegadas dixitais da chave do servidor son:\n"
@@ -467,7 +386,7 @@ msgid "Yes"
 msgstr "Si"
 
 #: ../subiquitycore/ui/interactive.py:109
-#: ../subiquity/ui/views/installprogress.py:247
+#: ../subiquity/ui/views/installprogress.py:259
 #: ../subiquity/ui/views/keyboard.py:219 ../subiquity/ui/views/ssh.py:98
 #: ../subiquity/ui/views/ssh.py:186
 msgid "No"
@@ -926,14 +845,14 @@ msgstr "Pechar o informe"
 
 #: ../subiquity/ui/views/error.py:158
 #: ../subiquity/ui/views/installprogress.py:65
-#: ../subiquity/ui/views/installprogress.py:248
+#: ../subiquity/ui/views/installprogress.py:260
 #: ../subiquity/ui/views/snaplist.py:354 ../subiquity/ui/views/snaplist.py:379
 #: ../subiquity/ui/views/zdev.py:162
 msgid "Continue"
 msgstr "Continuar"
 
 #: ../subiquity/ui/views/error.py:160
-#: ../subiquity/ui/views/installprogress.py:282
+#: ../subiquity/ui/views/installprogress.py:294
 #: ../subiquity/ui/views/welcome.py:113
 msgid "Switch to a shell"
 msgstr "Pasar a unha consola"
@@ -1353,11 +1272,11 @@ msgstr "Axuda para a configuración de almacenamento guiada"
 
 #: ../subiquity/ui/views/filesystem/lvm.py:61
 msgid ""
-"The only characters permitted in the name of a volume group are a-z, A-Z, 0-"
-"9, +, _, . and -"
+"The only characters permitted in the name of a volume group are a-z, A-Z, "
+"0-9, +, _, . and -"
 msgstr ""
-"Os únicos caracteres permitidos no nome dun grupo de volumes son a-z, A-Z, 0-"
-"9, +, _, . e -"
+"Os únicos caracteres permitidos no nome dun grupo de volumes son a-z, A-Z, "
+"0-9, +, _, . e -"
 
 #: ../subiquity/ui/views/filesystem/lvm.py:86
 msgid "passphrases"
@@ -1580,8 +1499,7 @@ msgstr ""
 
 #: ../subiquity/ui/views/filesystem/partition.py:324
 msgid "The only aspect of this partition that can be edited is the size.\n"
-msgstr ""
-"O único aspecto desta partición que é posíbel editar é o seu tamaño.\n"
+msgstr "O único aspecto desta partición que é posíbel editar é o seu tamaño.\n"
 
 #: ../subiquity/ui/views/filesystem/partition.py:328
 msgid ""
@@ -1676,8 +1594,8 @@ msgid ""
 "directory."
 msgstr ""
 "Desafortunadamente, fallou a sondaxe de dispositivos para instalar. Informe "
-"dun erro en Launchpad e, de ser posíbel, inclúa o contido do directorio "
-"/var/log/installer."
+"dun erro en Launchpad e, de ser posíbel, inclúa o contido do directorio /var/"
+"log/installer."
 
 #: ../subiquity/ui/views/filesystem/probing.py:68
 msgid "Probing for devices to install to failed"
@@ -1693,8 +1611,7 @@ msgstr "/ non está permitido no nome dun dispositivo RAID"
 
 #: ../subiquity/ui/views/filesystem/raid.py:76
 msgid "Whitespace is not permitted in the name of a RAID device"
-msgstr ""
-"Os espazos en branco non están permitidos no nome dun dispositivo RAID"
+msgstr "Os espazos en branco non están permitidos no nome dun dispositivo RAID"
 
 #: ../subiquity/ui/views/filesystem/raid.py:94
 msgid "RAID Level:"
@@ -2096,8 +2013,8 @@ msgid "Install progress"
 msgstr "Avance da instalación"
 
 #: ../subiquity/ui/views/installprogress.py:59
-#: ../subiquity/ui/views/installprogress.py:174
-#: ../subiquity/ui/views/installprogress.py:181
+#: ../subiquity/ui/views/installprogress.py:183
+#: ../subiquity/ui/views/installprogress.py:190
 msgid "Reboot Now"
 msgstr "Reiniciar agora"
 
@@ -2114,33 +2031,50 @@ msgid "Full installer output"
 msgstr "Saída completa do instalador"
 
 #: ../subiquity/ui/views/installprogress.py:142
-#: ../subiquity/ui/views/installprogress.py:145
-#: ../subiquity/ui/views/installprogress.py:148
-#: ../subiquity/ui/views/installprogress.py:151
 #: ../subiquity/ui/views/installprogress.py:154
+#: ../subiquity/ui/views/installprogress.py:157
+#: ../subiquity/ui/views/installprogress.py:160
+#: ../subiquity/ui/views/installprogress.py:163
 msgid "Installing system"
 msgstr "Estase a instalar o sistema"
 
-#: ../subiquity/ui/views/installprogress.py:157
-#: ../subiquity/ui/views/installprogress.py:165
-#: ../subiquity/ui/views/installprogress.py:173
+#: ../subiquity/ui/views/installprogress.py:145
+#, fuzzy
+msgid "Starting installer"
+msgstr "Reiniciar o instalador"
+
+#: ../subiquity/ui/views/installprogress.py:148
+msgid "Waiting on cloud-init"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:151
+msgid "Running early-commands"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:166
+#: ../subiquity/ui/views/installprogress.py:174
+#: ../subiquity/ui/views/installprogress.py:182
 msgid "Install complete!"
 msgstr "Completouse a instalación!"
 
-#: ../subiquity/ui/views/installprogress.py:159
+#: ../subiquity/ui/views/installprogress.py:168
 msgid "Cancel update and reboot"
 msgstr "Cancelar a actualización e reiniciar"
 
-#: ../subiquity/ui/views/installprogress.py:166
-#: ../subiquity/ui/views/installprogress.py:214
+#: ../subiquity/ui/views/installprogress.py:175
+#: ../subiquity/ui/views/installprogress.py:226
 msgid "Rebooting..."
 msgstr "Estase a reiniciar..."
 
-#: ../subiquity/ui/views/installprogress.py:180
+#: ../subiquity/ui/views/installprogress.py:189
 msgid "An error occurred during installation"
 msgstr "Produciuse un erro durante a instalación"
 
-#: ../subiquity/ui/views/installprogress.py:230
+#: ../subiquity/ui/views/installprogress.py:198
+msgid "Subiquity server process has exited"
+msgstr ""
+
+#: ../subiquity/ui/views/installprogress.py:242
 msgid ""
 "Selecting Continue below will begin the installation process and\n"
 "result in the loss of data on the disks selected to be formatted.\n"
@@ -2158,11 +2092,11 @@ msgstr ""
 "\n"
 "Con          des    continuar?"
 
-#: ../subiquity/ui/views/installprogress.py:251
+#: ../subiquity/ui/views/installprogress.py:263
 msgid "Confirm destructive action"
 msgstr "Confirme unha acción destrutiva"
 
-#: ../subiquity/ui/views/installprogress.py:271
+#: ../subiquity/ui/views/installprogress.py:283
 #, python-brace-format
 msgid ""
 "The installer running on {tty} is currently installing the system.\n"
@@ -2234,8 +2168,8 @@ msgid ""
 "the standard Latin layout.\n"
 "\n"
 "Right Alt or Caps Lock keys are often chosen for ergonomic reasons (in the "
-"latter case, use the combination Shift+Caps Lock for normal Caps toggle). "
-"Alt+Shift is also a popular combination; it will however lose its usual "
+"latter case, use the combination Shift+Caps Lock for normal Caps toggle). Alt"
+"+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs.\n"
 "\n"
 "Not all listed keys are present on all keyboards. "
@@ -2245,10 +2179,10 @@ msgstr ""
 "\n"
 "A tecla Alt da dereita ou a de bloqueo de maiúsculas escóllense "
 "frecuentemente por razóns de ergonomía (neste último caso, emprega a "
-"combinación Maiús.+Bloqueo de maiúsculas para alternar as maiúsculas). "
-"Alt+Maiús. tamén é unha combinación popular; porén, perderá o seu "
-"comportamento habitual en Emacs e noutros programas que a empregan para "
-"casos específicos.\n"
+"combinación Maiús.+Bloqueo de maiúsculas para alternar as maiúsculas). Alt"
+"+Maiús. tamén é unha combinación popular; porén, perderá o seu comportamento "
+"habitual en Emacs e noutros programas que a empregan para casos "
+"específicos.\n"
 "\n"
 "Non todas as teclas listadas están presentes en todos os teclados. "
 
@@ -2389,15 +2323,15 @@ msgid ""
 "If you need to use a HTTP proxy to access the outside world, enter the proxy "
 "information here. Otherwise, leave this blank.\n"
 "\n"
-"The proxy information should be given in the standard form of "
-"\"http://[[user][:pass]@]host[:port]/\"."
+"The proxy information should be given in the standard form of \"http://"
+"[[user][:pass]@]host[:port]/\"."
 msgstr ""
 "Se precisa empregar un proxy de HTTP para acceder ao mundo externo, "
 "introduza aquí a información do proxy. Caso contrario, deixe isto en "
 "branco.\n"
 "\n"
-"A información do proxy deberá darse na forma estándar de "
-"«http://[[usuario][:contrasinal]@]computador[:porto]/»."
+"A información do proxy deberá darse na forma estándar de «http://[[usuario][:"
+"contrasinal]@]computador[:porto]/»."
 
 #: ../subiquity/ui/views/proxy.py:43
 msgid "Proxy address:"
@@ -2604,8 +2538,7 @@ msgid "Enter your GitHub username."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:77
-msgid ""
-"A GitHub username may only contain alphanumeric characters or hyphens."
+msgid "A GitHub username may only contain alphanumeric characters or hyphens."
 msgstr ""
 
 #: ../subiquity/ui/views/ssh.py:81
@@ -2679,8 +2612,7 @@ msgstr "Confirmar chaves de SSH"
 #: ../subiquity/ui/views/ssh.py:190
 msgid ""
 "Keys with the following fingerprints were fetched. Do you want to use them?"
-msgstr ""
-"Obtivéronse chaves coas pegadas dixitais seguintes. Desexa empregalas?"
+msgstr "Obtivéronse chaves coas pegadas dixitais seguintes. Desexa empregalas?"
 
 #: ../subiquity/ui/views/ssh.py:193
 msgid "Confirm SSH key"
@@ -2776,15 +2708,12 @@ msgstr "Configuración de Zdev"
 #~ msgid "Edit IPv6"
 #~ msgstr "Editar IPv6"
 
-#, python-format
 #~ msgid "This field must be a %s URL."
 #~ msgstr "Este campo debe ser un URL %s."
 
-#, python-format
 #~ msgid "'%s' is not contained in '%s'"
 #~ msgstr "«%s» non está contido en «%s»"
 
-#, python-format
 #~ msgid "%s already exists"
 #~ msgstr "Xa existe unha clase chamada «%s»."
 
@@ -2815,32 +2744,26 @@ msgstr "Configuración de Zdev"
 #~ msgid "Make Boot Device"
 #~ msgstr "Crear dispositivo de arranque"
 
-#, python-brace-format
 #~ msgid ""
 #~ "Cannot delete {selflabel} as partition {partnum} is part of the {cdtype} "
 #~ "{cdname}."
 #~ msgstr ""
-#~ "Non é posíbel eliminar {selflabel} porque a partición {partnum} é parte de "
-#~ "{cdtype} {cdname}."
+#~ "Non é posíbel eliminar {selflabel} porque a partición {partnum} é parte "
+#~ "de {cdtype} {cdname}."
 
-#, python-brace-format
 #~ msgid "Cannot delete {selflabel} because it has {count} mounted partitions."
 #~ msgstr ""
 #~ "Non é posíbel eliminar {selflabel} porque ten {count} particións montadas."
 
-#, python-brace-format
 #~ msgid "Cannot delete {selflabel} because it has 1 mounted partition."
 #~ msgstr "Non é posíbel eliminar {selflabel} porque ten 1 partición montada."
 
-#, python-brace-format
 #~ msgid "software RAID {level}"
 #~ msgstr "RAID de software {level}"
 
-#, python-brace-format
 #~ msgid "Cannot edit {selflabel} because it has partitions."
 #~ msgstr "Non é posíbel editar {selflabel} porque ten particións."
 
-#, python-brace-format
 #~ msgid "Cannot edit {selflabel} because it has logical volumes."
 #~ msgstr "Non é posíbel editar {selflabel} porque ten volumes lóxicos."
 
@@ -2858,7 +2781,8 @@ msgstr "Configuración de Zdev"
 
 #~ msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
 #~ msgstr ""
-#~ "O nome de usuario debe coincidir con NAME_REGEX, ou sexa, [a-z_][a-z0-9_-]*"
+#~ "O nome de usuario debe coincidir con NAME_REGEX, ou sexa, [a-z_][a-"
+#~ "z0-9_-]*"
 
 #~ msgid "Info for {}"
 #~ msgstr "Información sobre {device}"
