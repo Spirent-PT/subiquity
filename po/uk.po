@@ -8,18 +8,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: subiquity\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-04 11:45+0100\n"
+"POT-Creation-Date: 2022-04-12 09:48+1200\n"
 "PO-Revision-Date: 2022-04-12 17:15+0000\n"
 "Last-Translator: yurchor <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
-"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2022-04-13 21:32+0000\n"
 "X-Generator: Launchpad (build 560baff2f814495c0c140fb3d6c66875f2312c96)\n"
+"Language: uk\n"
 
 #: ../subiquity/client/client.py:72
 msgid ""
@@ -43,23 +43,24 @@ msgstr ""
 "не переживуть перезавантаження. Якщо було розпочато встановлення,\n"
 "встановлену систему буде змонтовано до /target."
 
-#: ../subiquity/client/client.py:235
+#: ../subiquity/client/client.py:234
 msgid "yes"
 msgstr "так"
 
-#: ../subiquity/client/client.py:236
+#: ../subiquity/client/client.py:235
 msgid "no"
 msgstr "ні"
 
-#: ../subiquity/client/client.py:238
+#: ../subiquity/client/client.py:237
 msgid "Confirmation is required to continue."
 msgstr "Для продовження потрібне підтвердження."
 
-#: ../subiquity/client/client.py:239
+#: ../subiquity/client/client.py:238
 msgid "Add 'autoinstall' to your kernel command line to avoid this"
-msgstr "Додайте «autoinstall» до вашого рядка команди ядра, щоб уникнути цього"
+msgstr ""
+"Додайте «autoinstall» до вашого рядка команди ядра, щоб уникнути цього"
 
-#: ../subiquity/client/client.py:242
+#: ../subiquity/client/client.py:241
 msgid "Continue with autoinstall?"
 msgstr "Продовжити автовстановлення?"
 
@@ -70,6 +71,48 @@ msgstr "Не вдалося імпортувати ключі:"
 #: ../subiquity/client/controllers/ssh.py:100
 msgid "ssh-keygen failed to show fingerprint of downloaded keys:"
 msgstr "ssh-keygen не вдалося показати відбиток отриманих ключів:"
+
+#. Information about a drive
+#: ../subiquity/common/filesystem/actions.py:47
+msgctxt "DeviceAction"
+msgid "Info"
+msgstr "Інформація"
+
+#. Edit a device (partition, logical volume, RAID, etc)
+#: ../subiquity/common/filesystem/actions.py:49
+msgctxt "DeviceAction"
+msgid "Edit"
+msgstr "Змінити"
+
+#: ../subiquity/common/filesystem/actions.py:50
+msgctxt "DeviceAction"
+msgid "Reformat"
+msgstr "Переформатувати"
+
+#: ../subiquity/common/filesystem/actions.py:51
+msgctxt "DeviceAction"
+msgid "Add Partition"
+msgstr "Додати розділ"
+
+#: ../subiquity/common/filesystem/actions.py:52
+msgctxt "DeviceAction"
+msgid "Format"
+msgstr "Формат"
+
+#: ../subiquity/common/filesystem/actions.py:53
+msgctxt "DeviceAction"
+msgid "Remove from RAID/LVM"
+msgstr "Вилучити з RAID/LVM"
+
+#: ../subiquity/common/filesystem/actions.py:54
+msgctxt "DeviceAction"
+msgid "Delete"
+msgstr "Вилучити"
+
+#: ../subiquity/common/filesystem/actions.py:55
+msgctxt "DeviceAction"
+msgid "Make Boot Device"
+msgstr "Створити завантажувальний пристрій"
 
 #: ../subiquity/common/filesystem/actions.py:163
 #, python-brace-format
@@ -141,7 +184,8 @@ msgstr ""
 
 #: ../subiquity/common/filesystem/actions.py:313
 #, python-brace-format
-msgid "Cannot delete {devicelabel} because it has {count} mounted partitions."
+msgid ""
+"Cannot delete {devicelabel} because it has {count} mounted partitions."
 msgstr ""
 "Не можна вилучати {devicelabel}, оскільки на ньому {count} є змонтовані "
 "розділи."
@@ -347,6 +391,42 @@ msgstr "Невідома помилка"
 msgid "autoconfiguration failed"
 msgstr "помилка автоконфігурації"
 
+#. Information about a network interface
+#: ../subiquitycore/models/network.py:43
+msgctxt "NetDevAction"
+msgid "Info"
+msgstr "Інформація"
+
+#: ../subiquitycore/models/network.py:44
+msgctxt "NetDevAction"
+msgid "Edit Wifi"
+msgstr "Редагувати Wifi"
+
+#: ../subiquitycore/models/network.py:45
+msgctxt "NetDevAction"
+msgid "Edit IPv4"
+msgstr "Редагувати IPv4"
+
+#: ../subiquitycore/models/network.py:46
+msgctxt "NetDevAction"
+msgid "Edit IPv6"
+msgstr "Редагувати IPv6"
+
+#: ../subiquitycore/models/network.py:47
+msgctxt "NetDevAction"
+msgid "Edit bond"
+msgstr "Редагувати прив'язку"
+
+#: ../subiquitycore/models/network.py:48
+msgctxt "NetDevAction"
+msgid "Add a VLAN tag"
+msgstr "Додати мітку VLAN"
+
+#: ../subiquitycore/models/network.py:49
+msgctxt "NetDevAction"
+msgid "Delete"
+msgstr "Вилучити"
+
 #: ../subiquitycore/ssh.py:59
 msgid "The host key fingerprints are:\n"
 msgstr "Відбитки ключа вузла є:\n"
@@ -394,7 +474,7 @@ msgid "Yes"
 msgstr "Так"
 
 #: ../subiquitycore/ui/interactive.py:109
-#: ../subiquity/ui/views/installprogress.py:259
+#: ../subiquity/ui/views/installprogress.py:247
 #: ../subiquity/ui/views/keyboard.py:219 ../subiquity/ui/views/ssh.py:98
 #: ../subiquity/ui/views/ssh.py:186
 msgid "No"
@@ -862,14 +942,14 @@ msgstr "Закрити звіт"
 
 #: ../subiquity/ui/views/error.py:158
 #: ../subiquity/ui/views/installprogress.py:65
-#: ../subiquity/ui/views/installprogress.py:260
+#: ../subiquity/ui/views/installprogress.py:248
 #: ../subiquity/ui/views/snaplist.py:354 ../subiquity/ui/views/snaplist.py:379
 #: ../subiquity/ui/views/zdev.py:162
 msgid "Continue"
 msgstr "Продовжити"
 
 #: ../subiquity/ui/views/error.py:160
-#: ../subiquity/ui/views/installprogress.py:294
+#: ../subiquity/ui/views/installprogress.py:282
 #: ../subiquity/ui/views/welcome.py:113
 msgid "Switch to a shell"
 msgstr "Перемкнутися на оболонку"
@@ -1295,11 +1375,11 @@ msgstr "Довідка щодо спрямованого налаштовува�
 
 #: ../subiquity/ui/views/filesystem/lvm.py:61
 msgid ""
-"The only characters permitted in the name of a volume group are a-z, A-Z, "
-"0-9, +, _, . and -"
+"The only characters permitted in the name of a volume group are a-z, A-Z, 0-"
+"9, +, _, . and -"
 msgstr ""
-"У назві групи томів можна використовувати лише символи a-z, A-Z, 0-9, +, "
-"_, . і -"
+"У назві групи томів можна використовувати лише символи a-z, A-Z, 0-9, +, _, "
+". і -"
 
 #: ../subiquity/ui/views/filesystem/lvm.py:86
 msgid "passphrases"
@@ -2013,7 +2093,8 @@ msgstr "Ім'я користувача має відповідати взірц�
 #: ../subiquity/ui/views/identity.py:133
 #, python-brace-format
 msgid "The username \"{username}\" is reserved for use by the system."
-msgstr "Ім'я користувача «{username}» зарезервовано для використання системою."
+msgstr ""
+"Ім'я користувача «{username}» зарезервовано для використання системою."
 
 #. desc is "passwords" or "passphrases"
 #: ../subiquity/ui/views/identity.py:151
@@ -2044,8 +2125,8 @@ msgid "Install progress"
 msgstr "Поступ встановлення"
 
 #: ../subiquity/ui/views/installprogress.py:59
-#: ../subiquity/ui/views/installprogress.py:183
-#: ../subiquity/ui/views/installprogress.py:190
+#: ../subiquity/ui/views/installprogress.py:174
+#: ../subiquity/ui/views/installprogress.py:181
 msgid "Reboot Now"
 msgstr "Перезавантажити"
 
@@ -2062,50 +2143,33 @@ msgid "Full installer output"
 msgstr "Усі дані, які виведено засобом встановлення"
 
 #: ../subiquity/ui/views/installprogress.py:142
+#: ../subiquity/ui/views/installprogress.py:145
+#: ../subiquity/ui/views/installprogress.py:148
+#: ../subiquity/ui/views/installprogress.py:151
 #: ../subiquity/ui/views/installprogress.py:154
-#: ../subiquity/ui/views/installprogress.py:157
-#: ../subiquity/ui/views/installprogress.py:160
-#: ../subiquity/ui/views/installprogress.py:163
 msgid "Installing system"
 msgstr "Встановлюємо систему"
 
-#: ../subiquity/ui/views/installprogress.py:145
-#, fuzzy
-msgid "Starting installer"
-msgstr "Перезапустити засіб для встановлення"
-
-#: ../subiquity/ui/views/installprogress.py:148
-msgid "Waiting on cloud-init"
-msgstr ""
-
-#: ../subiquity/ui/views/installprogress.py:151
-msgid "Running early-commands"
-msgstr ""
-
-#: ../subiquity/ui/views/installprogress.py:166
-#: ../subiquity/ui/views/installprogress.py:174
-#: ../subiquity/ui/views/installprogress.py:182
+#: ../subiquity/ui/views/installprogress.py:157
+#: ../subiquity/ui/views/installprogress.py:165
+#: ../subiquity/ui/views/installprogress.py:173
 msgid "Install complete!"
 msgstr "Встановлення завершено!"
 
-#: ../subiquity/ui/views/installprogress.py:168
+#: ../subiquity/ui/views/installprogress.py:159
 msgid "Cancel update and reboot"
 msgstr "Скасувати оновлення і перезавантажити"
 
-#: ../subiquity/ui/views/installprogress.py:175
-#: ../subiquity/ui/views/installprogress.py:226
+#: ../subiquity/ui/views/installprogress.py:166
+#: ../subiquity/ui/views/installprogress.py:214
 msgid "Rebooting..."
 msgstr "Перезавантажуємо систему…"
 
-#: ../subiquity/ui/views/installprogress.py:189
+#: ../subiquity/ui/views/installprogress.py:180
 msgid "An error occurred during installation"
 msgstr "Під час спроби встановлення сталася помилка"
 
-#: ../subiquity/ui/views/installprogress.py:198
-msgid "Subiquity server process has exited"
-msgstr ""
-
-#: ../subiquity/ui/views/installprogress.py:242
+#: ../subiquity/ui/views/installprogress.py:230
 msgid ""
 "Selecting Continue below will begin the installation process and\n"
 "result in the loss of data on the disks selected to be formatted.\n"
@@ -2123,11 +2187,11 @@ msgstr ""
 "\n"
 "Ви справді хочете продовжувати?"
 
-#: ../subiquity/ui/views/installprogress.py:263
+#: ../subiquity/ui/views/installprogress.py:251
 msgid "Confirm destructive action"
 msgstr "Підтвердження руйнівної дії"
 
-#: ../subiquity/ui/views/installprogress.py:283
+#: ../subiquity/ui/views/installprogress.py:271
 #, python-brace-format
 msgid ""
 "The installer running on {tty} is currently installing the system.\n"
@@ -2201,8 +2265,8 @@ msgid ""
 "the standard Latin layout.\n"
 "\n"
 "Right Alt or Caps Lock keys are often chosen for ergonomic reasons (in the "
-"latter case, use the combination Shift+Caps Lock for normal Caps toggle). Alt"
-"+Shift is also a popular combination; it will however lose its usual "
+"latter case, use the combination Shift+Caps Lock for normal Caps toggle). "
+"Alt+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs.\n"
 "\n"
 "Not all listed keys are present on all keyboards. "
@@ -2356,14 +2420,14 @@ msgid ""
 "If you need to use a HTTP proxy to access the outside world, enter the proxy "
 "information here. Otherwise, leave this blank.\n"
 "\n"
-"The proxy information should be given in the standard form of \"http://"
-"[[user][:pass]@]host[:port]/\"."
+"The proxy information should be given in the standard form of "
+"\"http://[[user][:pass]@]host[:port]/\"."
 msgstr ""
 "Якщо для доступу до зовнішньої мережі вам потрібен HTTP-проксі, вкажіть тут "
 "його дані. Якщо проксі не потрібен, не заповнюйте це поле.\n"
 "\n"
-"Дані щодо проксі-сервера слід вказати у стандартній формі: «http://"
-"[[користувач][:пароль]@]вузол[:порт]/»."
+"Дані щодо проксі-сервера слід вказати у стандартній формі: "
+"«http://[[користувач][:пароль]@]вузол[:порт]/»."
 
 #: ../subiquity/ui/views/proxy.py:43
 msgid "Proxy address:"
@@ -2571,7 +2635,8 @@ msgid "Enter your GitHub username."
 msgstr "Введіть ваше ім'я користувача GitHub."
 
 #: ../subiquity/ui/views/ssh.py:77
-msgid "A GitHub username may only contain alphanumeric characters or hyphens."
+msgid ""
+"A GitHub username may only contain alphanumeric characters or hyphens."
 msgstr "У імені користувача GitHub можуть бути лише літери, цифри і дефіси."
 
 #: ../subiquity/ui/views/ssh.py:81
@@ -2733,66 +2798,6 @@ msgstr "Вимкнути"
 msgid "Zdev setup"
 msgstr "Налаштування Zdev"
 
-#~ msgctxt "DeviceAction"
-#~ msgid "Info"
-#~ msgstr "Інформація"
-
-#~ msgctxt "DeviceAction"
-#~ msgid "Edit"
-#~ msgstr "Змінити"
-
-#~ msgctxt "DeviceAction"
-#~ msgid "Reformat"
-#~ msgstr "Переформатувати"
-
-#~ msgctxt "DeviceAction"
-#~ msgid "Add Partition"
-#~ msgstr "Додати розділ"
-
-#~ msgctxt "DeviceAction"
-#~ msgid "Format"
-#~ msgstr "Формат"
-
-#~ msgctxt "DeviceAction"
-#~ msgid "Remove from RAID/LVM"
-#~ msgstr "Вилучити з RAID/LVM"
-
-#~ msgctxt "DeviceAction"
-#~ msgid "Delete"
-#~ msgstr "Вилучити"
-
-#~ msgctxt "DeviceAction"
-#~ msgid "Make Boot Device"
-#~ msgstr "Створити завантажувальний пристрій"
-
-#~ msgctxt "NetDevAction"
-#~ msgid "Info"
-#~ msgstr "Інформація"
-
-#~ msgctxt "NetDevAction"
-#~ msgid "Edit Wifi"
-#~ msgstr "Редагувати Wifi"
-
-#~ msgctxt "NetDevAction"
-#~ msgid "Edit IPv4"
-#~ msgstr "Редагувати IPv4"
-
-#~ msgctxt "NetDevAction"
-#~ msgid "Edit IPv6"
-#~ msgstr "Редагувати IPv6"
-
-#~ msgctxt "NetDevAction"
-#~ msgid "Edit bond"
-#~ msgstr "Редагувати прив'язку"
-
-#~ msgctxt "NetDevAction"
-#~ msgid "Add a VLAN tag"
-#~ msgstr "Додати мітку VLAN"
-
-#~ msgctxt "NetDevAction"
-#~ msgid "Delete"
-#~ msgstr "Вилучити"
-
 #~ msgid "Filesystem setup"
 #~ msgstr "Налаштування файлової системи"
 
@@ -2822,12 +2827,13 @@ msgstr "Налаштування Zdev"
 
 #~ msgid "Select an interface to configure it or select Done to continue"
 #~ msgstr ""
-#~ "Виберіть інтерфейс для налаштовування або натисніть кнопку «Виконано», "
-#~ "щоб продовжити"
+#~ "Виберіть інтерфейс для налаштовування або натисніть кнопку «Виконано», щоб "
+#~ "продовжити"
 
 #~ msgid "Use UP, DOWN and ENTER keys to select your keyboard."
 #~ msgstr "Скористайтеся клавішами ↑, ↓  та ENTER для вибору клавіатури."
 
+#, python-format
 #~ msgid "This field must be a %s URL."
 #~ msgstr "У цьому полі має бути адреса %s."
 
@@ -2857,8 +2863,7 @@ msgstr "Налаштування Zdev"
 
 #~ msgid "Username must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
 #~ msgstr ""
-#~ "Ім'я користувача має відповідати взірцю NAME_REGEX, тобто [a-z_][a-"
-#~ "z0-9_-]*"
+#~ "Ім'я користувача має відповідати взірцю NAME_REGEX, тобто [a-z_][a-z0-9_-]*"
 
 #~ msgid "Hostname must match NAME_REGEX, i.e. [a-z_][a-z0-9_-]*"
 #~ msgstr ""
@@ -2891,26 +2896,26 @@ msgstr "Налаштування Zdev"
 #~ "\n"
 #~ "GRUB буде встановлено до MBR диска призначення.\n"
 #~ "\n"
-#~ "Втім, на диску із таблицею розділів GPT недостаньо місця після MBR для "
-#~ "того, щоб GRUB між зберігати core.img другого етапу завантаження. Отже, "
-#~ "потрібен невеличкий неформатований розділ на початку диска. На ньому не "
-#~ "буде файлової системи, його не буде змонтовано, і його пункту не буде у "
-#~ "списку для редагування на цій сторінці."
+#~ "Втім, на диску із таблицею розділів GPT недостаньо місця після MBR для того, "
+#~ "щоб GRUB між зберігати core.img другого етапу завантаження. Отже, потрібен "
+#~ "невеличкий неформатований розділ на початку диска. На ньому не буде файлової "
+#~ "системи, його не буде змонтовано, і його пункту не буде у списку для "
+#~ "редагування на цій сторінці."
 
 #~ msgid ""
-#~ "Selecting Continue below will begin the installation process and result "
-#~ "in the loss of data on the disks selected to be formatted.\n"
+#~ "Selecting Continue below will begin the installation process and result in "
+#~ "the loss of data on the disks selected to be formatted.\n"
 #~ "\n"
 #~ "You will not be able to return to this or a previous screen once the "
 #~ "installation has started.\n"
 #~ "\n"
 #~ "Are you sure you want to continue?"
 #~ msgstr ""
-#~ "Натискання кнопки «Продовжити» призведе до запуску процедури встановлення "
-#~ "і, отже, втрати даних на дисках, які було позначено для форматування.\n"
+#~ "Натискання кнопки «Продовжити» призведе до запуску процедури встановлення і, "
+#~ "отже, втрати даних на дисках, які було позначено для форматування.\n"
 #~ "\n"
-#~ "Щойно встановлення буде розпочато, ви вже не зможете повернутися до цієї "
-#~ "або попередніх сторінок.\n"
+#~ "Щойно встановлення буде розпочато, ви вже не зможете повернутися до цієї або "
+#~ "попередніх сторінок.\n"
 #~ "\n"
 #~ "Ви справді хочете продовжити процедуру встановлення?"
 
@@ -2935,6 +2940,7 @@ msgstr "Налаштування Zdev"
 #~ msgid "Network interface {} WIFI configuration"
 #~ msgstr "Налаштовування інтерфейсу мережі WIFI {}"
 
+#, python-format
 #~ msgid "'%s' is not contained in '%s'"
 #~ msgstr "«%s» не міститься у «%s»"
 
@@ -2950,9 +2956,11 @@ msgstr "Налаштування Zdev"
 #~ msgid "Info"
 #~ msgstr "Інформація"
 
+#, python-format
 #~ msgid "%s already exists"
 #~ msgstr "%s вже існує"
 
+#, python-brace-format
 #~ msgid "DHCPv{v}"
 #~ msgstr "DHCPv{v}"
 
