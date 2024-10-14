@@ -23,8 +23,9 @@ from subiquity.ui.views.message import MessageView
 log = logging.getLogger('subiquity.client.controllers.message')
 
 class MessageController(SubiquityTuiController):
-    def read_message_file(self, path = "/cdrom/nocloud/files/message.json"):
-        msg_obj = json.loads('{"title": "Message Title", "text": "Default message text"}')
+    def read_message_file(self, path="/cdrom/nocloud/files/message.json"):
+        msg_obj = json.loads(
+            '{"title": "Message Title", "text": "Default message text"}')
         if os.path.isfile(path):
             with open(path, "r") as f:
                 msg = f.read()
@@ -32,7 +33,8 @@ class MessageController(SubiquityTuiController):
                     if not msg == '':
                         msg_obj = json.loads(msg)
         else:
-            log.debug("MessageController.read_message_file failed to read: {}".format(path))
+            log.debug("MessageController.read_message_file failed to read: %s",
+                      format(path))
         return msg_obj
 
     async def make_ui(self):
@@ -46,12 +48,11 @@ class MessageController(SubiquityTuiController):
             else:
                 self.ui.body.cancel_btn.base_widget._emit('click')
 
-    def done(self, done):
-        log.debug("MessageController.done {}".format(done))
+    def done(self):
+        log.debug("MessageController.done")
         self.app.next_screen()
 
-    def cancel(self, done):
+    def cancel(self):
         # Can't go back from here!
-        log.debug("MessageController.cancel {}".format(done))
+        log.debug("MessageController.cancel")
         os.system('/usr/sbin/poweroff')
-        
