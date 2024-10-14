@@ -19,13 +19,14 @@ from .installprogress import ProgressView
 from .keyboard import KeyboardView
 from .welcome import WelcomeView
 from .zdev import ZdevView
-
+from .message import MessageView
 __all__ = [
-    "FilesystemView",
-    "GuidedDiskSelectionView",
-    "IdentityView",
-    "KeyboardView",
-    "ProgressView",
-    "WelcomeView",
-    "ZdevView",
+    'FilesystemView',
+    'GuidedDiskSelectionView',
+    'IdentityView',
+    'KeyboardView',
+    'ProgressView',
+    'WelcomeView',
+    'ZdevView',
+    'MessageView',
 ]

@@ -14,7 +14,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from subiquitycore.tuicontroller import RepeatedController
-
 from .drivers import DriversController
 from .filesystem import FilesystemController
 from .identity import IdentityController
@@ -31,6 +30,7 @@ from .ssh import SSHController
 from .ubuntu_pro import UbuntuProController
 from .welcome import WelcomeController
 from .zdev import ZdevController
+from .message import MessageController
 
 # see SubiquityClient.controllers for another list
 __all__ = [
@@ -51,4 +51,5 @@ __all__ = [
     "UbuntuProController",
     "WelcomeController",
     "ZdevController",
+    'MessageController',
 ]
