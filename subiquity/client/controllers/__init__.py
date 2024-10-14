@@ -51,5 +51,5 @@ __all__ = [
     "UbuntuProController",
     "WelcomeController",
     "ZdevController",
-    'MessageController',
+    "MessageController",
 ]

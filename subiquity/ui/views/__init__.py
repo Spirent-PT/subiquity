@@ -21,12 +21,12 @@ from .welcome import WelcomeView
 from .zdev import ZdevView
 from .message import MessageView
 __all__ = [
-    'FilesystemView',
-    'GuidedDiskSelectionView',
-    'IdentityView',
-    'KeyboardView',
-    'ProgressView',
-    'WelcomeView',
-    'ZdevView',
-    'MessageView',
+    "FilesystemView",
+    "GuidedDiskSelectionView",
+    "IdentityView",
+    "KeyboardView",
+    "ProgressView",
+    "WelcomeView",
+    "ZdevView",
+    "MessageView",
 ]
