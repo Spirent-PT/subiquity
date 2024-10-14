@@ -28,6 +28,7 @@ from subiquitycore.view import BaseView
 
 log = logging.getLogger("subiquity.ui.views.message")
 
+
 class MessageView(BaseView):
     title = "Message Title"
     msg = "Default message text"

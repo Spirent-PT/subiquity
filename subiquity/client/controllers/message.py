@@ -22,6 +22,7 @@ from subiquity.ui.views.message import MessageView
 
 log = logging.getLogger('subiquity.client.controllers.message')
 
+
 class MessageController(SubiquityTuiController):
     def read_message_file(self, path="/cdrom/nocloud/files/message.json"):
         msg_obj = json.loads(
@@ -29,7 +30,7 @@ class MessageController(SubiquityTuiController):
         if os.path.isfile(path):
             with open(path, "r") as f:
                 msg = f.read()
-                if not msg is None:
+                if msg is not None:
                     if not msg == '':
                         msg_obj = json.loads(msg)
         else:
