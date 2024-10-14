@@ -55,3 +55,4 @@ ssh-import-id
 ubuntu-drivers-common
 umockdev
 xorriso
+debhelper
